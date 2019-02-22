@@ -1,0 +1,21 @@
+<% include ../partials/header.ejs %>
+
+<!-- <form method="POST" action="/games/<%= game.id %>?_method=PUT">
+    <input type="text" name="name" value="<%= game.name %>"><br>
+    <input type="text" name="description" value="<%= game.description %>"><br>
+    <input type="text" name="players" value="<%= game.players %>"><br>
+    <input type="submit" value="Update">
+
+</form> -->
+
+    <form method="POST" action="/games/<%= game.id %>?_method=PUT">
+        <input type="text" name="name" value="<%= game.name %>"><br>
+        <input type="text" name="description" value="<%= game.description %>"><br>
+        <input type="number" name="players" value="<%= game.players %>"><br>
+        <input type="submit" value="Update">
+    
+    </form>
+
+
+
+<% include ../partials/footer.ejs %>
